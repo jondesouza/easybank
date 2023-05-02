@@ -1,0 +1,110 @@
+.about-easybank {
+    height: 175px;
+    background-color: var(--dark-blue);
+    padding: 3% 10%;
+    gap: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Public-Sans', sans-serif;
+    font-size: .9rem;
+    color: white;
+}
+
+.contact {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.logo {
+    fill: white;
+}
+
+.media {
+    cursor: pointer;
+    transition: 0.2s;
+    fill: white;
+    padding: 20px!important;
+}
+
+.media:hover {
+    transition: 0.2s;
+    fill: var(--lime-green);
+}
+
+.links {
+    min-width: 200px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link-column,
+.link-mobile {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.link-mobile {
+    display: none;
+}
+
+.link {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.link:hover {
+    color: var(--lime-green);
+    transition: 0.2s;
+}
+
+.credits {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: var(--grayish-blue);
+}
+
+@media (max-width: 801px) {
+    .about-easybank {
+        height: 90vh;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .contact,
+    .links,
+    .credits {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .link-column {
+        display: none;
+    }
+
+    .link-mobile {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Public-Sans';
+  src: url('./assets/fonts/PublicSans-VariableFont_wght.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+:root {
+  --dark-blue: #2d314d;
+  --lime-green: #31d35c;
+  --bright-cyan: #2bb7da;
+  --grayish-blue: #9698a6;
+  --soft-gray: #f3f4f6;
+  --light-gray: #fafafa;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+section {
+  height: auto;
+  min-height: 550px;
+}
+
+@media (max-width: 375px) {
+  section {
+    height: auto;
+    min-height: 0;
+  }
+}
